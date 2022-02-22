@@ -167,22 +167,36 @@ body::-webkit-scrollbar-thumb{
         width: 70%;
     }
     .tareas{
+        position: relative;
         width: 70%;
     }
     .tareas p{
         font-size: 14px;
     }
     .tareas h3{
-        margin-left: 270px;
+        display: inline-flex;
+        position: absolute;
+        top: 33px;
+        right: 10px;
+    }
+    .tareas h3 i{
+        margin: 3px;
     }
     .tareas2{
+        position: relative;
         width: 70%;
     }
     .tareas2 p{
         font-size: 14px;
     }
     .tareas2 h3{
-        margin-left: 270px;
+        display: inline-flex;
+        position: absolute;
+        top: 33px;
+        right: 10px;
+    }
+    .tareas2 h3 i{
+        margin: 3px;
     }
     .alerta{
         width: 70%;
