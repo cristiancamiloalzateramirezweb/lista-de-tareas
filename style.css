@@ -66,21 +66,19 @@ body::-webkit-scrollbar-thumb{
 }
 .tareas{
     width: 60%;
-    height: 85px;
+    height: auto;
     border-radius: 5px;
     background-color: #666;
     margin: 5px auto;
-    padding: 5px 15px;
+    padding: 10px 15px;
     position: relative;
 }
 .tareas h2{
     color: white;
-    margin-top: 5px;
     font-size: 20px;
 }
 .tareas p{
     color: white;
-    margin-top: 5px;
     margin-left: 10px;
     font-size: 14px;
 }
@@ -101,22 +99,20 @@ body::-webkit-scrollbar-thumb{
 }
 .tareas2{
     width: 60%;
-    height: 85px;
+    height: auto;
     border-radius: 5px;
     background-color: #444;
     margin: 5px auto;
-    padding: 5px 15px;
+    padding: 10px 15px;
     position: relative;
 }
 .tareas2 h2{
     color: white;
-    margin-top: 5px;
     font-size: 20px;
 }
 .tareas2 p{
     color: mediumseagreen;
     font-size: 14px;
-    margin-top: 5px;
     margin-left: 10px;
 }
 .tareas2 h3 i{
@@ -138,8 +134,8 @@ body::-webkit-scrollbar-thumb{
     background-color: #222;
     border-radius: 5px;
     margin: 5px auto;
-    line-height: 40px;
-    height: 40px;
+    line-height: 60px;
+    height: 60px;
     width: 600px;
     color: white;
     text-align: center;
