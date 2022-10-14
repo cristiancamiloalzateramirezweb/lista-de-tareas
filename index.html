@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tareas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
     <link rel="icon" href="bloc.png" sizes="32x32">
 </head>
 <body>
     <div class="container">
-        <h1>Lista de Tareas</h1>
-        <form id="formulario"  autocomplete="off">
-            <input type="text" id="input" placeholder="Agrega Nueva Tarea"><br>
-            <button>Agregar</button>
-        </form>
+        <div class="content">
+            <span class="fecha"></span>
+            <h1>Lista de Tareas</h1>
+            <p>Vamos a cumplir tus tareas.</p>
+            <form id="formulario"  autocomplete="off">
+                <div class="data-box">
+                    <input type="text" id="input" placeholder="Agregar nueva tarea"><br>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </form>
+            <div id="lista-tareas" class="lista-tareas"></div>
+        </div>
     </div>
-    <div id="lista-tareas"></div>
     <template id="template">
         <div class="tareas">
             <h2></h2>

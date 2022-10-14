@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Signika', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -14,61 +14,83 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background: #222;
 }
+body{
+    background-color: tomato;
+}
 .container{
     width: 100%;
-    height: 250px;
-    background-color: tomato;
-    position: relative;
+    height: auto;
 }
-.container h1{
-    color: white;
-    text-align: center;
-    font-size: 44px;
-    padding: 20px 0px;
-}
-.container input{
-    display: block;
+.container .content{
+    width: 450px;
+    height: auto;
     margin: auto;
+    padding: 60px 0px;
+}
+.container .content .fecha{
+    color: white;
+    font-size: 14px;
+}
+.container .content h1{
+    color: white;
+    font-size: 32px;
+}
+.container .content p{
+    color: white;
+    font-size: 12px;
+}
+.container .content .data-box{
     width: 450px;
     height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 25px auto;
+    position: relative;
+}
+.container .content .data-box input{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
     border: none;
     outline: none;
-    border-bottom: 2px solid white;
     background-color: transparent;
     font-size: 14px;
     padding-left: 5px;
-    color: white;
+    color: tomato;
 }
-.container input::placeholder{
-    color: white;
+.container .content .data-box input::placeholder{
+    color: tomato;
     font-size: 14px;
 }
-.container button{
-    width: 90px;
-    height: 90px;
+.container .content .data-box button{
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     background-color: tomato;
-    border: 3px solid white;
+    border: 2px solid tomato;
     color: white;
     position: absolute;
-    left: calc(50% - 45px);
-    bottom: -45px;
-    font-size: 15px;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bolder !important;
 }
-.container button:hover{
+.container .content .data-box button:hover{
     transform: scale(1.05);
 }
-#lista-tareas{
-    margin-top: 100px;
+.lista-tareas{
     width: 100%;
     height: auto;
-    padding-bottom: 100px;
 }
 .tareas{
-    width: 60%;
+    width: 450px;
     height: auto;
     border-radius: 5px;
-    background-color: #666;
+    background-color: #222;
     margin: 5px auto;
     padding: 10px 15px;
     position: relative;
@@ -98,7 +120,7 @@ body::-webkit-scrollbar-thumb{
     color: #EF626C;
 }
 .tareas2{
-    width: 60%;
+    width: 450px;
     height: auto;
     border-radius: 5px;
     background-color: #444;
@@ -111,7 +133,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 20px;
 }
 .tareas2 p{
-    color: mediumseagreen;
+    color: mediumseagreen !important;
     font-size: 14px;
     margin-left: 10px;
 }
@@ -131,35 +153,24 @@ body::-webkit-scrollbar-thumb{
     color: #EF626C;
 }
 .alerta{
-    background-color: #222;
-    border-radius: 5px;
     margin: 5px auto;
-    line-height: 60px;
-    height: 60px;
-    width: 600px;
+    height: max-content;
+    width: 450px;
     color: white;
-    text-align: center;
     font-size: 14px;
 }
 @media (max-width: 500px) {
     body{
+        overflow-x: hidden;
         max-width: 500px;
         width: 500px;
     }
     .container{
         width: 500px;
-        height: 250px;
-        background-color: tomato;
-        position: relative;
-    }
-    #lista-tareas{
-        margin-top: 100px;
-        width: 500px;
         height: auto;
-        padding-bottom: 100px;
     }
     .tareas, .tareas2, .alerta{
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 }
