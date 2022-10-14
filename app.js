@@ -49,14 +49,16 @@ const pintarTareas = () => {
     if (Object.values(tareas).length === 0) {
         listaTarea.innerHTML = `
         <div class="alerta">
-            No hay tareas pendientes 😍
+            No Hay Tareas Pendientes 😍
         </div>
         `
         return
     }
     listaTarea.innerHTML = ''
+    let i = 1;
     Object.values(tareas).forEach(tarea => {
         const clone = template.cloneNode(true)
+        clone.querySelector('h2').textContent = "Tarea " + i;
         clone.querySelector('p').textContent = tarea.texto
         if (tarea.estado) {
             clone.querySelector('.tareas').classList.replace('tareas', 'tareas2')
@@ -66,6 +68,7 @@ const pintarTareas = () => {
         clone.querySelectorAll('.fas')[0].dataset.id = tarea.id
         clone.querySelectorAll('.fas')[1].dataset.id = tarea.id
         fragment.appendChild(clone)
+        i++;
     })
     listaTarea.appendChild(fragment)
 }
