@@ -4,7 +4,7 @@ const listaTarea = document.getElementById("lista-tareas");
 const template = document.getElementById("template").content;
 const fragment = document.createDocumentFragment();
 const fecha = document.querySelector(".fecha");
-
+const audio = document.getElementById("audio");
 
 function reloj(){
     const time = new Date();
@@ -95,6 +95,7 @@ const pintarTareas = () => {
 const btnAccion = (e) => {
     if (e.target.classList.contains("fa-check-circle")) {
         tareas[e.target.dataset.id].estado = true;
+        audio.src = "song.mp3";
         pintarTareas();
     }
     if (e.target.classList.contains("fa-minus-circle")) {
