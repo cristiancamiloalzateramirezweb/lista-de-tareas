@@ -37,7 +37,7 @@ body{
 }
 .container .content p{
     color: white;
-    font-size: 12px;
+    font-size: 14px;
 }
 .container .content .data-box{
     width: 450px;
@@ -56,12 +56,16 @@ body{
     outline: none;
     background-color: transparent;
     font-size: 14px;
-    padding-left: 5px;
+    padding-left: 10px;
     color: tomato;
+    border-radius: 5px;
 }
 .container .content .data-box input::placeholder{
     color: tomato;
     font-size: 14px;
+}
+.container .content .data-box input:focus{
+    box-shadow: 0px 3px 6px white;
 }
 .container .content .data-box button{
     width: 30px;

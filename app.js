@@ -5,13 +5,21 @@ const template = document.getElementById("template").content;
 const fragment = document.createDocumentFragment();
 const fecha = document.querySelector(".fecha");
 
-const FECHA = new Date();
-fecha.innerHTML = FECHA.toLocaleDateString("es-CO", {
-    weekday: "long",
-    month: "long",
-    day: "numeric",
-    year: "numeric"
-});
+
+function reloj(){
+    const time = new Date();
+    fecha.innerHTML = time.toLocaleDateString("es-CO", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric"
+    });
+}
+
+setInterval(reloj, 1000);
 
 /* let tareas = {
     1629402838263: {
@@ -60,7 +68,7 @@ const pintarTareas = () => {
     if (Object.values(tareas).length === 0) {
         listaTarea.innerHTML = `
         <div class="alerta">
-            No hay tareas pendientes 😍
+            No hay tareas pendientes. 😍
         </div>
         `
         return
