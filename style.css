@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb{
 }
 .container{
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: tomato;
     position: relative;
 }
@@ -24,7 +24,7 @@ body::-webkit-scrollbar-thumb{
     color: white;
     text-align: center;
     font-size: 44px;
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 .container input{
     display: block;
@@ -66,7 +66,7 @@ body::-webkit-scrollbar-thumb{
 }
 .tareas{
     width: 60%;
-    height: 80px;
+    height: 85px;
     border-radius: 5px;
     background-color: #666;
     margin: 5px auto;
@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb{
 }
 .tareas2{
     width: 60%;
-    height: 80px;
+    height: 85px;
     border-radius: 5px;
     background-color: #444;
     margin: 5px auto;
@@ -135,25 +135,35 @@ body::-webkit-scrollbar-thumb{
     color: #EF626C;
 }
 .alerta{
-    background-color: transparent;
+    background-color: #222;
     border-radius: 5px;
     margin: 5px auto;
     line-height: 40px;
     height: 40px;
     width: 600px;
-    color: #222;
+    color: white;
     text-align: center;
     font-size: 14px;
 }
 @media (max-width: 500px) {
+    body{
+        max-width: 500px;
+        width: 500px;
+    }
     .container{
         width: 500px;
-        height: 280px;
+        height: 250px;
         background-color: tomato;
         position: relative;
     }
+    #lista-tareas{
+        margin-top: 100px;
+        width: 500px;
+        height: auto;
+        padding-bottom: 100px;
+    }
     .tareas, .tareas2, .alerta{
-        width: 450px;
+        width: 90%;
         height: auto;
     }
 }
